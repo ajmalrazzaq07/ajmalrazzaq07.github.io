@@ -258,7 +258,7 @@ nav {
   list-style: none;
   display: flex;
   justify-content: center;
-  padding: 4px;
+  padding: 20px;
 }
 li {
   color: var(--color-white);
