@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ajmal Razzaq Bhatti</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    /> -->
+  </head>
+  <body class="show">
+    <!-- whole wrapper covering everything -->
+
+    <div class="whole__wrapper">
+      <!-- header  -->
+
+      <header>
+        <!-- slider quick navigation -->
+
+        <div class="slider">
+          <div
+            id="slider_1"
+            onmouseover="hovereffect_1()"
+            onclick="hovereffect_1()"
+          ></div>
+          <div
+            id="slider_2"
+            onmouseover="hovereffect_2(),effect()"
+            onclick="hovereffect_2()"
+            onmouseleave="reset()"
+          ></div>
+          <div
+            id="slider_3"
+            onmouseover="hovereffect_3()"
+            onclick="hovereffect_3()"
+          ></div>
+        </div>
+      </header>
+
+      <!-- main section containing whole section  -->
+
+      <main>
+        <!-- home section  -->
+
+        <div id="home__wrapper">
+          <img src="logo3d.png" alt="" class="logo3d" id="logo3d" />
+
+          <div class="dev__intro">
+            <div class="logo__wrapper">
+              <img
+                src="logo2d.png"
+                alt=""
+                class="logo2d"
+                onmouseover="effect()"
+                onmouseout="reset()"
+              />
+            </div>
+            <h1 class="author__name">AJMAL</h1>
+            <h5>@ajmalrazzaq07</h5>
+            <h3>Frontend Developer</h3>
+            <div id="social__handles"></div>
+          </div>
+        </div>
+
+        <!-- about section  -->
+
+        <div id="about__wrapper" style="display: none" tabindex="0">
+          <!-- intro sub-section  -->
+
+          <div id="intro__wrapper">
+            <img src="heyy.png" alt="" id="author__avatar" />
+
+            <h2 class="hello">👋</h2>
+
+            <p id="about__brief">
+              Thats Me Ajmal Razzaq Bhatti 🦀 <br />
+              I'm a <strong>frontend web developer</strong> Extraordinaire.
+              <br />
+              I mean, who wouldn't want to hire someone who can turn their
+              complex HTML, CSS and JavaScript code into an unorganized,
+              difficult-to-maintain mess?
+              <br />
+
+           
+            </p>
+
+            <a href="#skills__wrapper" id="scroll__button" onmouseenter="hello()" onmouseleave="reset()">
+              <svg
+                width="40px"
+                height="30px"
+                viewBox="0 0 247 390"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                style="
+                  fill-rule: evenodd;
+                  clip-rule: evenodd;
+                  stroke-linecap: round;
+                  stroke-linejoin: round;
+                  stroke-miterlimit: 1.5;
+                "
+                id="icon__scroll">
+                <path
+                  id="wheel"
+                  d="M123.359,79.775l0,72.843"
+                  style="fill: none; stroke: #e11d48; stroke-width: 20px"
+                />
+                <path
+                  id="mouse"
+                  d="M236.717,123.359c0,-62.565 -50.794,-113.359 -113.358,-113.359c-62.565,0 -113.359,50.794 -113.359,113.359l0,143.237c0,62.565 50.794,113.359 113.359,113.359c62.564,0 113.358,-50.794 113.358,-113.359l0,-143.237Z"
+                  style="fill: none; stroke: #fff; stroke-width: 20px"
+                />
+              </svg>
+            </a>
+          </div>
+
+          <!-- skills sub-section  -->
+
+          <div id="skills__wrapper">
+            <h2>SKIILS😎</h2>
+
+            <div class="bg__clr"></div>
+            <p id="about__brief">
+              My expertise lies in developing user-friendly and responsive web
+              applications, using <br><strong>HTML</strong>,<strong>CSS</strong>,
+              and <strong>JavaScript.</strong>
+              <br />
+              I am a fast learner, always looking to improve my skills and stay
+              up-to-date with the latest web development technologies and
+              trends.
+            </p>
+            <h2>Personal🤓</h2>
+            <div class="bg__clr"></div>
+
+            <div id="container__wrapper">
+              <div class="container">
+                <div class="text__container">
+                  <h1 class="skill__title">HTML5</h1>
+                  <p>100%</p>
+                </div>
+                <div class="bar__container">
+                  <div class="bar"></div>
+                  <div class="bar__sec__default"></div>
+                </div>
+              </div>
+              <div class="container">
+                <div class="text__container">
+                  <h1 class="skill__title">CCS3</h1>
+                  <p>95%</p>
+                </div>
+                <div class="bar__container">
+                  <div class="bar"></div>
+                  <div class="bar__sec__css3"></div>
+                </div>
+              </div>
+
+              <div class="container">
+                <div class="text__container">
+                  <h1 class="skill__title">JavaScript</h1>
+                  <p>80%</p>
+                </div>
+                <div class="bar__container">
+                  <div class="bar"></div>
+                  <div class="bar__sec__js"></div>
+                </div>
+              </div>
+              <div class="container">
+                <div class="text__container">
+                  <h1 class="skill__title">Graphic Designing</h1>
+                  <p>90%</p>
+                </div>
+                <div class="bar__container">
+                  <div class="bar"></div>
+                  <div class="bar__sec__gd"></div>
+                </div>
+              </div>
+              <div class="container">
+                <div class="text__container">
+                  <h1 class="skill__title">Figma</h1>
+                  <p>90%</p>
+                </div>
+                <div class="bar__container">
+                  <div class="bar"></div>
+                  <div class="bar__sec__figma"></div>
+                </div>
+              </div>
+              <div class="container">
+                <div class="text__container">
+                  <h1 class="skill__title">Blogger</h1>
+                  <p>100%</p>
+                </div>
+                <div class="bar__container">
+                  <div class="bar"></div>
+                  <div class="bar__sec__default"></div>
+                </div>
+              </div>
+            </div>
+
+            <h2>Proffesional🫢</h2>
+            <div class="bg__clr"></div>
+
+            <div id="container__wrapper">
+              <div class="container">
+                <div class="text__container">
+                  <h1 class="skill__title">Creativity</h1>
+                  <p>100%</p>
+                </div>
+                <div class="bar__container">
+                  <div class="bar"></div>
+                  <div class="bar__sec__default"></div>
+                </div>
+              </div>
+              <div class="container">
+                <div class="text__container">
+                  <h1 class="skill__title">Problem Solving</h1>
+                  <p>100%</p>
+                </div>
+                <div class="bar__container">
+                  <div class="bar"></div>
+                  <div class="bar__sec__default"></div>
+                </div>
+              </div>
+              <div class="container">
+                <div class="text__container">
+                  <h1 class="skill__title">Time Management</h1>
+                  <p>100%</p>
+                </div>
+                <div class="bar__container">
+                  <div class="bar"></div>
+                  <div class="bar__sec__default"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="progress-container">
+            <div class="progress"></div>
+            <span class="progress-text">0%</span>
+          </div>
+          
+
+        </div>
+
+        <div id="projects__wrapper" style="display: none"></div>
+      </main>
+
+      <nav>
+        <a href="#intro__wrapper" id="nav_1" onclick="hovereffect_1()" >About</a>
+          <button id="hire" onclick="hovereffect_2()"><a id="nav_2">Say Heyy!!</a></button>
+        <a href="#" id="nav_3" onclick="hovereffect_3()">Project</a>
+          
+      </nav>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
