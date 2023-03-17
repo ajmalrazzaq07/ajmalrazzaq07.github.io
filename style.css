@@ -260,7 +260,7 @@ nav {
   justify-content: center;
   padding: 4px;
 }
-li {
+.din {
   color: var(--color-white);
   font-family: var(--font-nav);
   width: 100px;
@@ -270,7 +270,7 @@ li {
   font-size: 13.33;
   transform: scale(0.8);
 }
-li:hover {
+.din:hover {
   transform: scale(0.9);
   transition: all 0.3s ease-in;
 }
