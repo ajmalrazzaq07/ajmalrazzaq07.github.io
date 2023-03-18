@@ -120,7 +120,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 72vh;
+  height: 80vh;
   margin-top: 20px;
   margin-bottom: 0px;
 }
@@ -651,10 +651,9 @@ strong {
 }
 .bar__container {
   width: 30%;
+  height: 30%;
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
+  background: white;
 }
 .bar {
   width: 13px;
