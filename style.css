@@ -45,8 +45,8 @@ body {
   background-repeat: no-repeat;
   margin: 0;
   padding: 0;
-  height: 100vh;
-  overflow-y: auto;
+  height: 99vh;
+  overflow: hidden;
   scroll-behavior: smooth;
 }
 
