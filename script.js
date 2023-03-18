@@ -169,9 +169,9 @@ function effect(){
 
 function scrollToSection(sectionId) {
     var section = document.getElementById(sectionId);
-    section.scrollIntoView({behavior: 'smooth'});
+    
   }
-  
+
 function reset() {       
     logo__3d.style.transform = default__value
     body.style.backgroundImage= default__value;
