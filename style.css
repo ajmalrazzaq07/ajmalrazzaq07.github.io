@@ -120,7 +120,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 80vh;
+  height: 70vh;  
   margin-top: 20px;
   margin-bottom: 0px;
 }
