@@ -21,7 +21,7 @@
       <header>
         <!-- slider quick navigation -->
 
-        <div class="slider">
+        <div class="slider" id="slider">
           <div
             id="slider_1"
             onmouseover="hovereffect_1()"
@@ -88,8 +88,9 @@
            
             </p>
 
-            <a href="#skills__wrapper" id="scroll__button" onmouseenter="hello()" onmouseleave="reset()">
+          
               <svg
+              onclick="scrollToSection('skills__wrapper')"
                 width="40px"
                 height="30px"
                 viewBox="0 0 247 390"
@@ -115,7 +116,7 @@
                   style="fill: none; stroke: #fff; stroke-width: 20px"
                 />
               </svg>
-            </a>
+            
           </div>
 
           <!-- skills sub-section  -->
@@ -249,7 +250,7 @@
       </main>
 
       <nav>
-        <a href="#intro__wrapper" id="nav_1" onclick="hovereffect_1()" class="din" >About</a>
+        <a href="#" id="nav_1" onclick="hovereffect_1()" class="din" >About</a>
           <button id="hire" onclick="hovereffect_2()"><a id="nav_2">Say Heyy!!</a></button>
         <a href="#" id="nav_3" onclick="hovereffect_3()" class="din">Project</a>
           

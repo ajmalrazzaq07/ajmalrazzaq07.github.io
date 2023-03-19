@@ -45,8 +45,8 @@ body {
   background-repeat: no-repeat;
   margin: 0;
   padding: 0;
-  height: 100vh;
-  overflow-y: auto;
+  height: 99vh;
+  overflow: hidden;
   scroll-behavior: smooth;
 }
 
@@ -78,7 +78,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    overflow-y: auto;
+    overflow: hidden;
     scroll-behavior: smooth;
   }
 }
@@ -120,7 +120,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 72vh;
+  height: 70vh; 
   margin-top: 20px;
   margin-bottom: 0px;
 }
@@ -163,6 +163,7 @@ main {
   color: var(--color-white);
   margin-bottom: 5px;
   margin-top: 50px;
+  margin-right: 27px;
   text-align: center;
   line-height: 22px;
   -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530)both;
@@ -650,10 +651,9 @@ strong {
 }
 .bar__container {
   width: 30%;
+  height: 30%;
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
+  background: white;
 }
 .bar {
   width: 13px;
