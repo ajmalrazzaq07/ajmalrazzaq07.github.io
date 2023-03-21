@@ -32,18 +32,19 @@ const hire = document.getElementById('hire');
 const body = document.querySelector('body'); 
 const logo__3d = document.querySelector('.logo3d');
 const color__white= "#e11d48";
+const color__red= "#e11d48"
 const transition__ease = "all .3s ease .1s";
 const default__value = "";
 const no__value = "none";
-const scroll__button = document.getElementById('scroll__button');
 
 
 
 
   
- document.addEventListener('keydown', function() {
-    wrappers.about__wrapper.focus();
-  });
+//  document.addEventListener('keydown', function() {
+//     wrappers.about__wrapper.focus();
+//     wrappers.about__wrapper.scrollLeft='10px';
+//   });
 
 
 
@@ -163,7 +164,7 @@ if (wrappers.home__wrapper.style.display !== default__value){
     hire.style.transform=transform._1_1;
 }
 
-navs.nav_2.innerHTML="Hire"
+navs.nav_2.innerHTML="HIRE"
 document.querySelector(".logosmall").style.display= no__value;
     
     // sliders.slider_0.style.backgroundColor=default__value;
@@ -291,27 +292,145 @@ function hovereffect_4() {
    wrappers.pro__wrapper.style.display= no__value;
    wrappers.con__wrapper.style.display= default__value;
 }
+console.log(document.querySelectorAll('.container'));
 
 
 
 
-
-
-
-
-const progress = document.querySelector('.progress');
-const progressText = document.querySelector('.progress-text');
-
-function updateProgress(percent) {
-  const deg = percent * 3.6;
-  if (percent > 50) {
-    progress.classList.add('complete');
-  }
-  progress.style.transform = `rotate(${deg}deg)`;
-  progressText.textContent = `${percent}%`;
+if(document.querySelector('.html__container').style.display == default__value){
+    document.querySelector('.circle__html').style.transform= transform._1_1;
+    document.querySelector('.circle__html').style.backgroundColor= color__red;
 }
 
-updateProgress(75); // Example usage
+document.getElementById('btn__right').addEventListener('click' ,function(){
+    if(document.querySelector('.html__container').style.display == default__value ){
+        document.querySelector('.css__container').style.display= default__value;
+        document.querySelector('.css__container').classList.add('show__one');
+        document.querySelector('.circle__css').style.transform= transform._1_1;
+        document.querySelector('.circle__css').style.backgroundColor= color__red;
+        document.querySelector('.html__container').style.display = no__value;
+        document.querySelector('.circle__html').style.transform= default__value;
+        document.querySelector('.circle__html').style.backgroundColor= default__value;
+
+    }
+    else if(document.querySelector('.css__container').style.display == default__value){
+        document.querySelector('.js__container').style.display= default__value;
+        document.querySelector('.js__container').classList.add('show__one');
+        document.querySelector('.circle__js').style.transform= transform._1_1;
+        document.querySelector('.circle__js').style.backgroundColor= color__red;
+        document.querySelector('.css__container').style.display = no__value;
+        document.querySelector('.circle__css').style.transform= default__value;
+        document.querySelector('.circle__css').style.backgroundColor= default__value;
+    }
+    else if(document.querySelector('.js__container').style.display == default__value){
+        document.querySelector('.figma__container').style.display= default__value;
+        document.querySelector('.figma__container').classList.add('show__one');
+        document.querySelector('.circle__figma').style.transform= transform._1_1;
+        document.querySelector('.circle__figma').style.backgroundColor= color__red;
+        document.querySelector('.js__container').style.display = no__value;
+        document.querySelector('.circle__js').style.transform= default__value
+        document.querySelector('.circle__js').style.backgroundColor= default__value
+    }
+    else if(document.querySelector('.figma__container').style.display == default__value){
+        document.querySelector('.html__container').style.display= default__value;
+        document.querySelector('.html__container').classList.add('show__one');
+        document.querySelector('.circle__html').style.transform= transform._1_1;
+        document.querySelector('.circle__html').style.backgroundColor= color__red;
+        document.querySelector('.figma__container').style.display = no__value;
+        document.querySelector('.circle__figma').style.transform= default__value
+        document.querySelector('.circle__figma').style.backgroundColor= default__value;
+    }
+
+    });
+
+
+document.getElementById('btn__left').addEventListener("click" ,function(){
+
+    if(document.querySelector('.html__container').style.display == default__value ){
+        document.querySelector('.figma__container').style.display= default__value;
+        document.querySelector('.figma__container').classList.add('show__one');
+        document.querySelector('.circle__figma').style.transform= transform._1_1;
+        document.querySelector('.circle__figma').style.backgroundColor= color__red;
+        document.querySelector('.html__container').style.display = no__value;
+        document.querySelector('.circle__html').style.transform= default__value
+        document.querySelector('.circle__html').style.backgroundColor= default__value
+
+    }
+    else if(document.querySelector('.figma__container').style.display == default__value){
+        document.querySelector('.js__container').style.display= default__value;
+        document.querySelector('.js__container').classList.add('show__one');
+        document.querySelector('.circle__js').style.transform= transform._1_1;
+        document.querySelector('.circle__js').style.backgroundColor= color__red;
+        document.querySelector('.figma__container').style.display = no__value;
+        document.querySelector('.circle__figma').style.transform= default__value;
+        document.querySelector('.circle__figma').style.backgroundColor= default__value;
+    }
+    else if(document.querySelector('.js__container').style.display == default__value){
+        document.querySelector('.css__container').style.display= default__value;
+        document.querySelector('.css__container').classList.add('show__one');
+        document.querySelector('.circle__css').style.transform= transform._1_1;
+        document.querySelector('.circle__css').style.backgroundColor= color__red;
+        document.querySelector('.js__container').style.display = no__value;
+        document.querySelector('.circle__js').style.transform= default__value;
+        document.querySelector('.circle__js').style.backgroundColor= default__value;
+    }
+    else if(document.querySelector('.css__container').style.display == default__value){
+        document.querySelector('.html__container').style.display= default__value;
+        document.querySelector('.html__container').classList.add('show__one');
+        document.querySelector('.circle__html').style.transform= transform._1_1;
+        document.querySelector('.circle__html').style.backgroundColor= color__red;
+        document.querySelector('.css__container').style.display = no__value;
+        document.querySelector('.circle__css').style.transform= default__value
+        document.querySelector('.circle__css').style.backgroundColor= default__value
+    }
+    
+})
+
+
+
+document.getElementById('project__btn__right').addEventListener('click' ,function(){
+    if(document.querySelector('.mockup__ss').style.display == default__value ){
+      document.querySelector('.mockup__ss__two').style.display= default__value;
+      document.querySelector('.mockup__ss').style.display = no__value;
+      document.querySelector('.project__details__two').style.display= default__value;
+      document.querySelector('.project__details__one').style.display = no__value;
+      document.querySelector('.project__details__two').classList.add('show__one');
+      
+
+      
+    }
+else if(document.querySelector('.mockup__ss__two').style.display == default__value ){
+    document.querySelector('.mockup__ss').style.display= default__value;
+    document.querySelector('.mockup__ss__two').style.display = no__value;
+    document.querySelector('.project__details__one').style.display= default__value;
+      document.querySelector('.project__details__two').style.display = no__value;
+      document.querySelector('.project__details__one').classList.add('show__one');
+}
+});
+
+document.getElementById('project__btn__left').addEventListener('click' ,function(){
+    if(document.querySelector('.mockup__ss__two').style.display == default__value ){
+        document.querySelector('.mockup__ss').style.display= default__value;
+        document.querySelector('.mockup__ss__two').style.display = no__value;
+        document.querySelector('.project__details__one').style.display= default__value;
+        document.querySelector('.project__details__two').style.display = no__value;
+        document.querySelector('.project__details__one').classList.add('show__one');
+     
+
+    }
+else if(document.querySelector('.mockup__ss').style.display == default__value ){
+    document.querySelector('.mockup__ss__two').style.display= default__value;
+    document.querySelector('.mockup__ss').style.display = no__value;
+    document.querySelector('.project__details__two').style.display= default__value;
+    document.querySelector('.project__details__one').style.display = no__value;
+    document.querySelector('.project__details__two').classList.add('show__one');
+
+
+
+      document.querySelector('..project__details').classList.add('show__one');
+}
+});
+
 
 function hello(){
     scroll__button.className ="";
@@ -327,7 +446,6 @@ function reset() {
     logo__3d.style.transform = default__value
     body.style.backgroundImage= default__value;
     document.querySelector(".hello").style.transform = transform._1;
-    scroll__button.classList.remove("hello");
     body.classList.remove("bg-change-2x");
 
 } 
