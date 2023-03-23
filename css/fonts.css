@@ -11,10 +11,10 @@
   @font-face {
     font-family: "lemonmilk";
     font-style: normal;
-    src: url(LEMONMILK-Medium.woff2) format("woff2");
+    src: url(/fonts/LEMONMILK-Medium.woff2) format("woff2");
   }
   @font-face {
     font-family: "celis";
     font-style: normal;
-    src: url(celis.woff2) format("woff2");
+    src: url(/fonts/celis.woff2) format("woff2");
   }
