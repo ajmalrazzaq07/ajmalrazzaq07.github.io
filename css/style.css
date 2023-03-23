@@ -18,7 +18,7 @@
 /* body style  */
 
 body {
-  background: url("images/bg__default.jpg"), var(--color-black);
+  background: url("/Images/bg__default.jpg"), var(--color-black);
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
