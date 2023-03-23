@@ -467,4 +467,5 @@ strong {
 /* contact section  */
 .con__text {
   font-size: 24px;
+  color: var(--color-gray);
 }
