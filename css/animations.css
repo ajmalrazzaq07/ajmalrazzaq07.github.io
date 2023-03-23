@@ -340,7 +340,7 @@
 
   @keyframes color-change-2x {
     0% {
-      background: url("images/bg__default.jpg"), var(--color-black);
+      background: url("/images/bg__default.jpg"), var(--color-black);
       background-size: cover;
       background-position: center center;
       background-attachment: fixed;
@@ -352,7 +352,7 @@
       scroll-behavior: smooth;
     }
     100% {
-      background: url("images/bg__sec.jpg"), var(--color-black);
+      background: url("/images/bg__sec.jpg"), var(--color-black);
       background-size: cover;
       background-position: center center;
       background-attachment: fixed;
