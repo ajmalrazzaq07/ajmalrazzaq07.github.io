@@ -359,6 +359,7 @@ strong {
 
 .project__container {
   height: 130px;
+  margin-top: 60px;
   width: 289px;
   justify-content: center;
   align-items: center;
