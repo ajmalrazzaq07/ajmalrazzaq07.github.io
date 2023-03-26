@@ -41,7 +41,7 @@
 /* body style  */
 
 body {
-  background: url("/ajmalrazzaq07.github.io/img/bg__default.jpg"),
+  background: url("/img/bg__default.jpg"),
     var(--color-black);
   background-size: cover;
   background-position: center center;
@@ -328,9 +328,7 @@ strong {
   outline: none;
 }
 
-#container__wrapper {
-  margin-bottom: 10px;
-}
+
 .container {
   border-radius: 17px;
   padding: 17px;
@@ -362,29 +360,22 @@ strong {
 .project__container {
   height: 130px;
   width: 289px;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
-.overlay__circle {
-	background: #313131;
-	width: 150px;
-	height: 150px;
-	border-radius: 50%;
-	position: absolute;
-	left: 667px;
+.language__container{
+  gap: 10px;
+  flex-grow: end;
 }
-.mockup {
-  width: auto;
-  height: 250px;
-  position: relative;
-  top: 107px;
-  z-index: 1;
-  left: 55px;
-}
-.mockup__ss, .mockup__ss__two {
-	width: 120px;
-	height: 215px;
-	border-radius: 10px;
-  z-index: 999;
+.language{
+  background-color: #303030;
+  color: var(--color-white);
+  border-radius: 50px;
+  padding: 7px 20px;
+  font-family: var(--font-google);
+  font-size: 0.733rem;
+
 }
 
 .project__name {
@@ -496,4 +487,12 @@ main{
     opacity: 0;
     display: none;
   }
+}
+
+
+.mockup__ss,
+.mockup__ss__two
+{
+  width: auto;
+  height:   100px;
 }
