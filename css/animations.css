@@ -336,33 +336,5 @@
     }
   }
 
-/* background image change  */
-
-  @keyframes color-change-2x {
-    0% {
-      background: url("/images/bg__default.jpg"), var(--color-black);
-      background-size: cover;
-      background-position: center center;
-      background-attachment: fixed;
-      background-repeat: no-repeat;
-      margin: 0;
-      padding: 0;
-      height: 100vh;
-      overflow-y: auto;
-      scroll-behavior: smooth;
-    }
-    100% {
-      background: url("/images/bg__sec.jpg"), var(--color-black);
-      background-size: cover;
-      background-position: center center;
-      background-attachment: fixed;
-      background-repeat: no-repeat;
-      margin: 0;
-      padding: 0;
-      height: 100vh;
-      overflow-y: auto;
-      scroll-behavior: smooth;
-    }
-  }
   
   

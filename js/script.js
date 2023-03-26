@@ -52,7 +52,6 @@ const transition__ease = "all .3s ease .1s";
 const default__value = "";
 const no__value = "none";
 
-
   
 //  document.addEventListener('keydown', function() {
 //     wrappers.about__wrapper.focus();
@@ -65,30 +64,26 @@ const no__value = "none";
 // tabs 
 
 if (wrappers.home__wrapper.style.display == default__value) {
-    // sliders.slider_2.style.backgroundColor= color__white;
-    // sliders.slider_2.style.transform= transform._1;
-    hire.style.transform= transform._1_1;
    document.querySelector(".logosmall").style.display= no__value;
+   navs.nav_2.setAttribute("href", "mailto:ajmalrazzaq07@gmail.com");
 
 }
 function hovereffect_0() {
     navs.nav_0.style.transition=transition__ease
     navs.nav_0.style.color= color__white;
     navs.nav_0.style.transform= transform._9;
-    hire.style.transition=transition__ease;
-    hire.style.transform=transform._1_1;
 
    
     navs.nav_1.style.color=default__value;
     navs.nav_1.style.transform=default__value;
-    hire.style.backgroundColor=default__value;
 
 
  
-    navs.nav_2.style.color=default__value;
-    navs.nav_2.style.transform=default__value;
-    navs.nav_2.innerHTML="Home";
-    hire.style.transform=default__value;
+    navs.nav_2.innerHTML= `<button id="hire">
+   <span id="btn__txt">Home</span> 
+  </button>`;
+    navs.nav_2.removeAttribute('href');
+   
    
     
    navs.nav_3.style.color=default__value;
@@ -113,16 +108,15 @@ function hovereffect_1() {
     navs.nav_1.style.transition=transition__ease
     navs.nav_1.style.color= color__white;
     navs.nav_1.style.transform= transform._9;
-    hire.style.transition=transition__ease;
-    hire.style.transform=transform._1_1;
+    
 
     navs.nav_0.style.color=default__value;
     navs.nav_0.style.transform=default__value;
   
-    navs.nav_2.style.color=default__value;
-    navs.nav_2.style.transform=default__value;
-    navs.nav_2.innerHTML="Home";
-    hire.style.transform=default__value;
+    navs.nav_2.innerHTML=`<button id="hire">
+    <span id="btn__txt">Home</span> 
+   </button>`;
+    navs.nav_2.removeAttribute('href');
      
    navs.nav_3.style.color=default__value;
    navs.nav_3.style.transform=default__value;
@@ -140,17 +134,17 @@ function hovereffect_1() {
    wrappers.contact__wrapper.style.display= no__value;
 
 }
-function hovereffect_2() {
-    navs.nav_2.style.transform=transform._9;
-    
+function hovereffect_2() { 
 if (wrappers.home__wrapper.style.display !== default__value){
     wrappers.home__wrapper.className="show";
-    hire.style.transition=transition__ease;
-    hire.style.transform=transform._1_1;
 }
-
-navs.nav_2.innerHTML="HIRE"
-document.querySelector(".logosmall").style.display= no__value;
+setTimeout(function(){
+    navs.nav_2.setAttribute("href", "mailto:ajmalrazzaq07@gmail.com");
+},200)
+   navs.nav_2.innerHTML= `<button id="hire">
+   <span id="btn__txt">Say Hey!</span> 
+  </button>`;
+   document.querySelector(".logosmall").style.display= no__value;
     
     navs.nav_0.style.color=default__value;
     navs.nav_0.style.transform=default__value;
@@ -158,7 +152,7 @@ document.querySelector(".logosmall").style.display= no__value;
   
     navs.nav_1.style.color=default__value;
     navs.nav_1.style.transform=default__value;
-    hire.style.backgroundColor=default__value;
+   
     
     
     navs.nav_3.style.color=default__value;
@@ -183,10 +177,12 @@ function hovereffect_3() {
     navs.nav_0.style.transform = default__value;
     navs.nav_0.style.color = default__value;
     
-    navs.nav_2.style.transform = default__value;
-    hire.style.transform = default__value;
+  
 
-navs.nav_2.innerHTML = "Home";
+    navs.nav_2.innerHTML= `<button id="hire">
+    <span id="btn__txt">Home</span> 
+   </button>`;
+navs.nav_2.removeAttribute('href');
 
 document.querySelector(".logosmall").style.display= default__value;
     
@@ -210,20 +206,19 @@ function hovereffect_4() {
     navs.nav_4.style.transition=transition__ease
     navs.nav_4.style.color= color__white;
     navs.nav_4.style.transform= transform._9;
-    hire.style.transition=transition__ease;
-    hire.style.transform=transform._1_1;
+   
 
    
     navs.nav_1.style.color=default__value;
     navs.nav_1.style.transform=default__value;
-    hire.style.backgroundColor=default__value;
 
 
-  
-    navs.nav_2.style.color=default__value;
-    navs.nav_2.style.transform=default__value;
-    navs.nav_2.innerHTML="Home";
-    hire.style.transform=default__value;
+
+    navs.nav_2.innerHTML= `<button id="hire">
+   <span id="btn__txt">Home</span> 
+  </button>`;
+    navs.nav_2.removeAttribute('href');
+;
     
    document.querySelector(".logosmall").style.display= default__value;
    
@@ -383,17 +378,59 @@ else if(screenshot.ss__one.style.display == default__value ){
 });
 
 
-function effect(){
-    body.className="bg-change-2x";
-    document.querySelector(".hello").style.transform = transform._1_1;
-    
-}
-
-function reset() {       
-    body.style.backgroundImage= default__value;
-    document.querySelector(".hello").style.transform = transform._1;
-    body.classList.remove("bg-change-2x");
-
-} 
-
-
+var alertBox = document.getElementById('alert__box');
+    var form = document.getElementById("my-form");
+    async function handleSubmit(event) {
+        event.preventDefault();
+        var status = document.getElementById("my-form-status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+            alertBox.style.display="";
+            alertBox.classList.add('alert-box');
+        status.innerHTML = "Bravo, you just reinvented carrier pigeon.";
+        setTimeout(function(){
+            alertBox.classList.remove('alert-box')
+            alertBox.style.display="none";
+            document.querySelector('input').value='';
+    }, 3000);
+          form.reset()
+        } else {
+            response.json().then(data => {
+                if (Object.hasOwn(data, 'errors')) {
+                  status.innerHTML = 'Leaving the message field blank, classic!';
+                  alertBox.style.display="";
+                  alertBox.className='alert-box';
+                  setTimeout(function(){
+                      alertBox.classList.remove('alert-box')
+                      alertBox.style.display="none";
+                  }, 3000);
+                
+            } else {
+              status.innerHTML = "Sorry, your message got lost in space"
+              alertBox.style.display="";
+              alertBox.className='alert-box';
+              setTimeout(function(){
+                alertBox.classList.remove('alert-box');
+                alertBox.style.display="none";
+        }, 3000);
+            }
+          })
+        }
+      }).catch(error => {
+        status.innerHTML = "Sorry, your message got lost in space"
+        alertBox.style.display="";
+alertBox.className='alert-box';
+setTimeout(function(){
+    alertBox.classList.remove('alert-box')
+    alertBox.style.display="none";
+}, 3000);
+      });
+    }
+    form.addEventListener("submit", handleSubmit)
