@@ -377,6 +377,15 @@ strong {
   font-size: 0.733rem;
 
 }
+.project__option{
+  gap: 10px;
+  color: var(--color-gray);
+}
+.project__option a{
+ color: var(--color-white);
+ font-family: var(--font-google);
+ text-decoration: none;
+}
 
 .project__name {
   color: var(--color-ancent);
