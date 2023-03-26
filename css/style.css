@@ -466,7 +466,9 @@ input::selection {
   text-align: center;
   font-size: 14px;
 }
-
+main{
+  overflow: scroll;
+}
 .alert-box {
   position: fixed;
   background: var(--color-blur);
