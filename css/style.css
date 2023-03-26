@@ -476,6 +476,8 @@ input::selection {
   transform: translateX(-50%);
   padding: 0px 10px;
   border-radius: 5px;
+  font-size: 0.833rem;
+  font-family: var(--font-google);
   animation: fadeOut 3s ease-in-out forwards;
   z-index: 9999;
 }
