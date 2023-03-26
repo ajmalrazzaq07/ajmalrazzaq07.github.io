@@ -362,11 +362,13 @@ strong {
   width: 289px;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
+
 }
 .language__container{
   gap: 10px;
   flex-grow: end;
+  position: relative;
+  bottom: -53px;
 }
 .language{
   background-color: #303030;
@@ -385,6 +387,24 @@ strong {
  color: var(--color-white);
  font-family: var(--font-google);
  text-decoration: none;
+}
+.circle__overlay{
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+  background: #303030;
+  position: absolute;
+  top: -46px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+.mockup__ss, .mockup__ss__two {
+	width: auto;
+	height: 180px;
+	border-radius: 20px;
+	position: relative;
+	top: 35px;
 }
 
 .project__name {
@@ -499,9 +519,3 @@ main{
 }
 
 
-.mockup__ss,
-.mockup__ss__two
-{
-  width: auto;
-  height:   100px;
-}
