@@ -76,9 +76,14 @@ header {
   justify-content: space-evenly;
   width: 100%;
   height: 86vh;
-  overflow: scroll;
+  overflow: hidden;
 }
 
+#intro__wrapper,
+#about__brief,
+#skill__wrapper,#contact__wrapper,#projects__wrapper{
+  overflow: hidden;
+}
 /* home section  */
 
 .logo__wrapper {
@@ -488,7 +493,7 @@ input::selection {
   font-size: 14px;
 }
 main{
-  overflow: scroll;
+  overflow: hidden;
 }
 .alert-box {
   position: fixed;
