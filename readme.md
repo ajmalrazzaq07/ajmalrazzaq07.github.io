@@ -1,4 +1,4 @@
-# ajmalrazzaq07.github.io
+# Ajmalrazzaq07.github.io
 
 This is my personal website. The website serves as a portfolio to showcase my skills, projects, and interests.
 
