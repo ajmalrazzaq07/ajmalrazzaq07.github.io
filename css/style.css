@@ -363,19 +363,18 @@ strong {
 /* project section  */
 
 .project__container {
-  height: 130px;
   margin-top: 60px;
-  width: 289px;
   justify-content: center;
   align-items: center;
 
 }
 .language__container{
   gap: 10px;
-  flex-grow: end;
-  position: relative;
-  bottom: -53px;
+ border-radius: 16px;
+ padding: 3px 20px;
+ margin: 5px 0px 10px 0px;
 }
+
 .language{
   background-color: #303030;
   color: var(--color-white);
