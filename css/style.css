@@ -483,7 +483,7 @@ svg {
   margin-top: 4px;
   transform: scale(0.8);
 }
-input {
+textarea {
   width: 90%;
   height: 100px;
   outline: none;
@@ -493,8 +493,10 @@ input {
   color: var(--color-white-dark);
   font-family: var(--font-google);
   text-align: center;
+  padding: 20px;
+  resize: none;
 }
-input::selection {
+textarea::selection {
   background: var(--color-gray);
 }
 #my-form-button {
@@ -529,7 +531,7 @@ main{
   bottom: 80px;
   left: 50%;
   transform: translateX(-50%);
-  padding: 0px 10px;
+  padding: 10px 10px;
   border-radius: 8px;
   font-size: 0.733rem;
   font-family: var(--font-google);
