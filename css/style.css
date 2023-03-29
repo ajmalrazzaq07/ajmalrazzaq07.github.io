@@ -406,6 +406,9 @@ strong {
   justify-content: center;
   overflow: hidden;
 }
+.space-less{
+  letter-spacing: 1px;
+}
 .mockup__ss, .mockup__ss__two {
 	width: auto;
 	height: 180px;
