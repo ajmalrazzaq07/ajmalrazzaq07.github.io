@@ -79,6 +79,10 @@ header {
   overflow: hidden;
 }
 
+#intro__wrapper{
+  margin-top: 18px;
+}
+
 #intro__wrapper,
 #about__brief,
 #skill__wrapper,#contact__wrapper,#projects__wrapper{
