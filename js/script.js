@@ -308,7 +308,6 @@ document.getElementById('btn__left').addEventListener("click" ,function(){
     else if(skillContainers.jsSkillContainer.style.display == default__value){
         skillContainers.cssSkillContainer.style.display= default__value;
         skillContainers.cssSkillContainer.classList.add('show__one');
-        trackingDots.css.style.transform= transform._1_1;
         trackingDots.css.style.backgroundColor= color__red;
         skillContainers.jsSkillContainer.style.display = no__value;
         trackingDots.js.style.transform= default__value;
