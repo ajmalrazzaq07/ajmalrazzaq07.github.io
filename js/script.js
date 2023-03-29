@@ -254,7 +254,6 @@ document.getElementById('btn__right').addEventListener('click' ,function(){
     if(skillContainers.htmlSkillContainer.style.display == default__value ){
         skillContainers.cssSkillContainer.style.display= default__value;
         skillContainers.cssSkillContainer.classList.add('show__one');
-        trackingDots.css.style.transform= transform._1_1;
         trackingDots.css.style.backgroundColor= color__red;
         skillContainers.htmlSkillContainer.style.display = no__value;
         trackingDots.html.style.transform= default__value;
@@ -264,19 +263,16 @@ document.getElementById('btn__right').addEventListener('click' ,function(){
     else if(skillContainers.cssSkillContainer.style.display == default__value){
         skillContainers.jsSkillContainer.style.display= default__value;
         skillContainers.jsSkillContainer.classList.add('show__one');
-        trackingDots.js.style.transform= transform._1_1;
         trackingDots.js.style.backgroundColor= color__red;
         skillContainers.cssSkillContainer.style.display = no__value;
         trackingDots.css.style.transform= default__value;
         trackingDots.css.style.backgroundColor= default__value;
     }
     else if(skillContainers.jsSkillContainer.style.display == default__value){
-       skillContainers.figmaSkillContainer.style.display= default__value;
+        skillContainers.figmaSkillContainer.style.display= default__value;
         skillContainers.figmaSkillContainer.classList.add('show__one');
-        trackingDots.figma.style.transform= transform._1_1;
         trackingDots.figma.style.backgroundColor= color__red;
         skillContainers.jsSkillContainer.style.display = no__value;
-        trackingDots.js.style.transform= default__value
         trackingDots.js.style.backgroundColor= default__value
     }
     else if(skillContainers.figmaSkillContainer.style.display == default__value){
@@ -284,8 +280,7 @@ document.getElementById('btn__right').addEventListener('click' ,function(){
         skillContainers.htmlSkillContainer.classList.add('show__one');
         trackingDots.html.style.transform= transform._1_1;
         trackingDots.html.style.backgroundColor= color__red;
-       skillContainers.figmaSkillContainer.style.display = no__value;
-        trackingDots.figma.style.transform= default__value
+        skillContainers.figmaSkillContainer.style.display = no__value;
         trackingDots.figma.style.backgroundColor= default__value;
     }
 

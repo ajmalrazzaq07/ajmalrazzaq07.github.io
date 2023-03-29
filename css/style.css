@@ -355,7 +355,6 @@ strong {
   height: 5px;
   background: var(--color-white-dark);
   border-radius: 60px;
-  transform: scale(.9);
 }
 .skill__name {
   font-family: var(--font-secondary);
@@ -403,7 +402,6 @@ strong {
   border-radius: 100px;
   background: #303030;
   position: absolute;
-  top: -46px;
   display: flex;
   justify-content: center;
   overflow: hidden;
