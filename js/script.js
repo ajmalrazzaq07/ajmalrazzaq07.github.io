@@ -246,7 +246,6 @@ function hovereffect_4() {
 // skills slider 
 
 if(skillContainers.htmlSkillContainer.style.display == default__value){
-    trackingDots.html.style.transform= transform._1_1;
     trackingDots.html.style.backgroundColor= color__red;
 }
 
@@ -265,7 +264,6 @@ document.getElementById('btn__right').addEventListener('click' ,function(){
         skillContainers.jsSkillContainer.classList.add('show__one');
         trackingDots.js.style.backgroundColor= color__red;
         skillContainers.cssSkillContainer.style.display = no__value;
-        trackingDots.css.style.transform= default__value;
         trackingDots.css.style.backgroundColor= default__value;
     }
     else if(skillContainers.jsSkillContainer.style.display == default__value){
@@ -278,7 +276,6 @@ document.getElementById('btn__right').addEventListener('click' ,function(){
     else if(skillContainers.figmaSkillContainer.style.display == default__value){
         skillContainers.htmlSkillContainer.style.display= default__value;
         skillContainers.htmlSkillContainer.classList.add('show__one');
-        trackingDots.html.style.transform= transform._1_1;
         trackingDots.html.style.backgroundColor= color__red;
         skillContainers.figmaSkillContainer.style.display = no__value;
         trackingDots.figma.style.backgroundColor= default__value;
@@ -320,10 +317,8 @@ document.getElementById('btn__left').addEventListener("click" ,function(){
     else if(skillContainers.cssSkillContainer.style.display == default__value){
         skillContainers.htmlSkillContainer.style.display= default__value;
         skillContainers.htmlSkillContainer.classList.add('show__one');
-        trackingDots.html.style.transform= transform._1_1;
         trackingDots.html.style.backgroundColor= color__red;
         skillContainers.cssSkillContainer.style.display = no__value;
-        trackingDots.css.style.transform= default__value
         trackingDots.css.style.backgroundColor= default__value
     }
     
