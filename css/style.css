@@ -388,6 +388,9 @@ strong {
   gap: 10px;
   color: var(--color-gray);
 }
+.space-less{
+  letter-spacing: 1px;
+}
 .project__option a{
  color: var(--color-white);
  font-family: var(--font-google);
