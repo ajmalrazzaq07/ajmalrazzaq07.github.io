@@ -354,7 +354,8 @@ strong {
   width: 5px;
   height: 5px;
   background: var(--color-white-dark);
-  border-radius: 50%;
+  border-radius: 60px;
+  transform: scale(.9);
 }
 .skill__name {
   font-family: var(--font-secondary);
