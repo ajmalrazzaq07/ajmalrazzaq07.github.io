@@ -136,7 +136,7 @@ function hovereffect_1() {
 }
 function hovereffect_2() { 
 if (wrappers.home__wrapper.style.display !== default__value){
-    wrappers.home__wrapper.className="show";
+    wrappers.home__wrapper.classList.add="show";
 }
 setTimeout(function(){
     navs.nav_2.setAttribute("href", "mailto:ajmalrazzaq07@gmail.com");
