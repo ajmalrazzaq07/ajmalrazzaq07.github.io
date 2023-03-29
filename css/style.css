@@ -526,14 +526,13 @@ main{
 }
 .alert-box {
   position: fixed;
-  background: var(--color-blur);
-  backdrop-filter: blur(4px);
-  bottom: 80px;
+  bottom: 75px;
   left: 50%;
   transform: translateX(-50%);
-  padding: 10px 10px;
+  padding: 10px 8px;
   border-radius: 8px;
   font-size: 0.733rem;
+  width: 100%;
   font-family: var(--font-google);
   animation: fadeOut 3s ease-in-out forwards;
   z-index: 9999;
