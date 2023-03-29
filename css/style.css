@@ -351,8 +351,8 @@ strong {
 .circle__css,
 .circle__js,
 .circle__figma {
-  width: 4px;
-  height: 4px;
+  width: 5px;
+  height: 5px;
   background: var(--color-white-dark);
   border-radius: 60px;
 }
