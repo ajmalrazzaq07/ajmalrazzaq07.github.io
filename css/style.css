@@ -503,6 +503,12 @@ textarea {
 textarea::selection {
   background: var(--color-gray);
 }
+.userNameContainer{
+  height: 300px;
+  width: 100%;
+  color: var(--color-blur);
+  position: absolute;
+}
 #my-form-button {
   margin-top: 20px;
   width: 5rem;

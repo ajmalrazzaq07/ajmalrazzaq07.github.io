@@ -369,9 +369,13 @@ else if(screenshot.ss__one.style.display == default__value ){
 
 var alertBox = document.getElementById('alert__box');
     var form = document.getElementById("my-form");
+    
     async function handleSubmit(event) {
         event.preventDefault();
+       
         var status = document.getElementById("my-form-status");
+        var userName = prompt("what's your good name dear😒");
+        document.getElementById('userName').value= userName;
       var data = new FormData(event.target);
       fetch(event.target.action, {
         method: form.method,
@@ -380,7 +384,16 @@ var alertBox = document.getElementById('alert__box');
             'Accept': 'application/json'
         }
       }).then(response => {
-        if (response.ok) {
+        if(document.querySelector('.message').value == ""){
+            {       status.innerHTML = 'Leaving the message field blank, classic!';
+                alertBox.style.display="";
+                alertBox.className='alert-box';
+                setTimeout(function(){
+                    alertBox.classList.remove('alert-box')
+                    alertBox.style.display="none";
+                }, 3000);
+        }}
+       else if (response.ok) {
             alertBox.style.display="";
             alertBox.classList.add('alert-box');
         status.innerHTML = "Bravo, you just reinvented carrier pigeon.";
