@@ -367,6 +367,8 @@ else if(screenshot.ss__one.style.display == default__value ){
 });
 
 
+//formspree contact form using ajax default code with some custom logic by me 😂
+
 var alertBox = document.getElementById('alert__box');
     var form = document.getElementById("my-form");
     
@@ -374,8 +376,6 @@ var alertBox = document.getElementById('alert__box');
         event.preventDefault();
        
         var status = document.getElementById("my-form-status");
-        var userName = prompt("what's your good name dear😒");
-        document.getElementById('userName').value= userName;
       var data = new FormData(event.target);
       fetch(event.target.action, {
         method: form.method,
@@ -384,7 +384,7 @@ var alertBox = document.getElementById('alert__box');
             'Accept': 'application/json'
         }
       }).then(response => {
-        if(document.querySelector('.message').value == ""){
+        if(document.querySelector('.message').value == "" || document.getElementById('email').value==""){
             {       status.innerHTML = 'Leaving the message field blank, classic!';
                 alertBox.style.display="";
                 alertBox.className='alert-box';
