@@ -105,9 +105,6 @@ header {
   width: 100px;
   height: 100px;
   margin: 0;
-  opacity: 0.6;
-  -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
-  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
 .author__name {
@@ -120,10 +117,11 @@ header {
   text-align: center;
   line-height: 22px;
   letter-spacing: 3px;
+}
+.blur-out-animation{
   -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
   animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
-
 .fullstop {
   color: var(--color-ancent);
 }
@@ -300,6 +298,11 @@ nav {
   line-height: 25px;
   margin: 10px;
   text-align: center;
+}
+.slide-bottom {
+  -webkit-animation: slide-bottom 1s  both;
+          animation: slide-bottom 1s both;
+         
 }
 
 .font__size__secondary {
@@ -547,7 +550,7 @@ main{
 }
 .alert-box {
   position: fixed;
-  bottom: 75px;
+  bottom: 80px;
   left: 50%;
   transform: translateX(-50%);
   padding: 10px 8px;
