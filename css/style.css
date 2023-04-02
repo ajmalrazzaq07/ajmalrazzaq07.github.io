@@ -199,8 +199,8 @@ h3 {
 }
 
 .line {
-  height: 15px;
-  width: 2px;
+  height: 20px;
+  width: 1px;
   background: linear-gradient(
     180deg,
     var(--color-black) 40%,
