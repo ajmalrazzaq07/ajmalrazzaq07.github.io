@@ -386,6 +386,7 @@ strong {
 }
 .line-h{
  margin: 8px;
+ font-size: 0.877rem;
 }
 .language__container{
   gap: 10px;
@@ -435,6 +436,9 @@ strong {
 	border-radius: 20px;
 	position: relative;
 	top: 35px;
+}
+.project__option a:hover{
+  color: var(--color-ancent);
 }
 
 .project__name {
