@@ -546,7 +546,7 @@ textarea::selection {
 main{
   overflow: hidden;
   width: 100%;
-  height: 80vh;
+  height: 90vh;
 }
 .alert-box {
   position: fixed;
